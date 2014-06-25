@@ -88,3 +88,6 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# Other Machine Specific files/folders
+*.DS_Store
