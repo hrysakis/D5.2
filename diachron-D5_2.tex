@@ -1,0 +1,143 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{mathptmx}
+\usepackage{fancyhdr}
+\usepackage[top=5cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{sectsty}
+\usepackage{tocloft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Changing TOC/LOF/LOT presentation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\cfttoctitlefont}{\large\bfseries\scshape}
+\renewcommand{\cftloftitlefont}{\large\bfseries\scshape}
+\renewcommand{\cftlottitlefont}{\large\bfseries\scshape}
+\renewcommand{\cftsecfont}{\bfseries\scshape}
+\renewcommand{\cftsubsecfont}{\scshape}
+\renewcommand{\cftsubsubsecfont}{\scshape}
+\renewcommand\contentsname{Table of Contents}
+\renewcommand\listfigurename{Table of Figures}
+\renewcommand\listtablename{List of Tables}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Embedding logos to the page style
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancyplain}
+\lhead{\includegraphics[width=.3\textwidth]{images/diachron-logo.png}}
+\rhead{Grant Agreement No. 601043}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\allsectionsfont{\sffamily}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \includegraphics[width=.15\textwidth]{images/eu-logo.png} &
+    \includegraphics[width=.6\textwidth]{images/diachron-logo.png} &
+    \includegraphics[width=.15\textwidth]{images/fp7-logo.png}
+  \end{tabular}
+\end{center}
+
+\vspace{4ex}
+EU Project No:601043 (Integrated Project (IP))
+
+\vspace{2ex}
+DIACHRON
+
+\vspace{2ex}
+Managing the Evolution and Preservation of the Data Web DIACHRON
+
+\begin{center}
+  \begin{tabular}{@{}|ll|}
+    \hline
+    Dissemination level:  & \\
+    Type of Document:  & \\
+    Contractual date of delivery: & \\
+    Actual Date of Delivery:  & \\
+    Deliverable Number: & \\
+    Deliverable Name: & \\
+    Deliverable Leader: & \\
+    Work package(s): & \\ 
+    Status \& version: & \\
+    Number of pages: & \\
+    WP contributing to the deliverable: & \\  
+    WP / Task responsible: & \\ 
+    Coordinator (name / contact): & \\  
+    Other Contributors: & \\
+    EC Project Officer: & Federico Milani \\
+    \multicolumn{2}{|p{15cm}|}{\cellcolor{gray!20}
+      \textbf{Keywords:} 
+    } \\
+    \multicolumn{2}{|p{15cm}|}{\cellcolor{gray!50}
+      \textbf{Abstract:} \newline
+      Some meaningful abstract here.
+    } \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Version history
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+  \begin{tabular}{|c|c|p{6cm}|p{7cm}|}
+    \hline
+    \multicolumn{4}{|c|}{\cellcolor{CornflowerBlue}Document History} \\
+    \hline
+    \rowcolor{LightSteelBlue}
+    Ver. & Date & Contributor(s) & Description \\
+    \hline
+    0.1 & 24.06.2014 & Jeremy Debattista & Created TOC and LaTeX Setup \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TOC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LOF and LOT contiguously
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\listoffigures
+\listoftables
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Main Sections
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sections/1Introduction/Introduction}
+\input{sections/2DQF/Introduction}
+\input{sections/3Libraries/Introduction}
+\input{sections/4Ranking/Introduction}
+\input{sections/5Crawling/Introduction}
+\input{sections/6Conclusions/Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ...and in the words of Terry Tibbs:
+% Thank you, goodnight -- much love.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
