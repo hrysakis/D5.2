@@ -66,11 +66,9 @@ Contact Persons
 
 UBONN: 
  
-  Jeremy Debattista (jeremy.debattista@iais-extern.fraunhofer.de)
-  
-  Christoph Lange (math.semantic.web@gmail.com)
-  
-  Natalja Friesen (natalja.friesen@iais-extern.fraunhofer.de)
+  Jeremy Debattista (jeremy.debattista@iais-extern.fraunhofer.de)\n
+  Christoph Lange (math.semantic.web@gmail.com)\n
+  Natalja Friesen (natalja.friesen@iais-extern.fraunhofer.de)\n
   
 FORTH:
 
