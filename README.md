@@ -48,7 +48,12 @@ Contents (Responsability):
   
       4.2.2.1 ...
   
-    4.2.3 ...
+    4.2.3 Dynamicity Category (FORTH)
+      4.2.3.1 Versions Volatility
+      4.2.3.2 Average Volatility
+      4.2.3.3.Weighted Volatility
+      
+    4.2.4 ...  
   
   4.3 Visualisation of Quality Assessment
   
@@ -73,5 +78,6 @@ UBONN:
   Natalja Friesen (natalja.friesen@iais-extern.fraunhofer.de)
   
 FORTH:
-
+  Ioannis Chrysakis (hrysakis@ics.forth.gr)
+  Kostas Stefanidis (kstef@ics.forth.gr)
 HANZO:
